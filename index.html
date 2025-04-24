@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fry Cuisine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="max-w-6xl mx-auto px-4">
+    <!-- Header with Logo and Navigation -->
+    <header class="py-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="relative w-24 h-24">
+                    
+                    <div class="absolute bottom-0 right-0  text-gray-800">
+                        <img src="https://frycuisine.com/wp-content/uploads/2024/05/cropped-cropped-cropped-Screenshot-2024-05-10-154756-1-e1716560154275.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Navigation and Search -->
+            <div class="w-full md:w-auto">
+                <!-- Search Bar -->
+                <div class="relative mb-4 md:mb-6 max-w-md mx-auto">
+                    <input type="text" placeholder="Hit Enter To Search" class="w-full px-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-gray-400">
+                    <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav class="flex justify-center overflow-x-auto">
+                    <ul class="flex space-x-6 text-gray-800">
+                        <li class="hover:text-yellow-500 transition-colors">Home</li>
+                        <li class="hover:text-yellow-500 transition-colors">About</li>
+                        <li class="group relative hover:text-yellow-500 transition-colors">
+                            Popular
+                            <span class="ml-1">▾</span>
+                            <div class="absolute hidden group-hover:block bg-white shadow-md p-2 rounded-md mt-1 z-10 min-w-[120px]">
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Top Recipes</a>
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Trending</a>
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Seasonal</a>
+                            </div>
+                        </li>
+                        <li class="hover:text-yellow-500 transition-colors">Recipes</li>
+                        <li class="group relative hover:text-yellow-500 transition-colors">
+                            contacts
+                            <span class="ml-1">▾</span>
+                            <div class="absolute hidden group-hover:block bg-white shadow-md p-2 rounded-md mt-1 right-0 z-10 min-w-[120px]">
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Email</a>
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Phone</a>
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Social Media</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="border-b border-gray-200 my-4"></div>
+    </header>
+    
+    <!-- Hero Section -->
+    <main>
+        <div class="flex flex-col md:flex-row items-center gap-8 py-8">
+            <!-- Food Image -->
+            <div class="w-full md:w-1/2">
+                <img src="./img/1.png"  alt="Grilled chicken with kale and lemon" class="rounded-lg  md:w-[450px] h-auto object-cover shadow-md">
+            </div>
+            
+            <!-- Content -->
+            <div class="w-full md:w-1/2">
+                <h2 class="heading text-4xl mb-4 text-gray-900">Enjoy healthy and delicious food</h2>
+                <p class="text-green-600 text-lg mb-6">Good food is the foundation of genuine happiness</p>
+                <button class="bg-black text-white px-8 py-3 rounded-full uppercase font-medium tracking-wider hover:bg-gray-800 transition-colors">Read More</button>
+            </div>
+
+
+
+            
+             
+        </div>
+    </main>
+
+
+    <!-- section 2 -->
+    <div class=" w-full ">
+        <div class="bg-[#2c4a22] p-8 rounded shadow-md">
+            <h2 class="text-3xl font-serif text-white mb-4">Subscribe To Our Newsletter</h2>
+            <p class="text-white mb-6">Join thousands of TinySalt subscribers and get our best recipes delivered each week!</p>
+            
+            <form class="flex flex-col sm:flex-row gap-3">
+                <input 
+                    type="email" 
+                    placeholder="Your Email" 
+                    class="flex-1 px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    required
+                />
+                <button 
+                    type="submit" 
+                    class="bg-white text-[#2c4a22] px-4 py-2 font-medium hover:bg-gray-100 transition-colors"
+                >
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+    <h1 class="text-4xl md:text-5xl font-bold my-8 text-center md:text-left">Popular Menu</h1>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Appetizer - Large Card -->
+        <div class="col-span-1 md:row-span-2 rounded-3xl overflow-hidden relative flex flex-col">
+            <img src="./img/2.png" alt="Appetizers" class="w-full h-full object-cover aspect-[3/4] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Appitizer</p>
+            </div>
+        </div>
+        
+        <!-- Beverages -->
+        <div class="col-span-1 rounded-3xl overflow-hidden relative">
+            <img src="./img/3.png" class="w-full h-full object-cover aspect-[3/2] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Beverages</p>
+            </div>
+        </div>
+        
+        <!-- Bread -->
+        <div class="col-span-1 rounded-3xl overflow-hidden relative">
+            <img src="./img/4.png" alt="Bread" class="w-full h-full object-cover aspect-[3/2] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Bread</p>
+            </div>
+        </div>
+        
+        <!-- Salad -->
+        <div class="col-span-1 rounded-3xl overflow-hidden relative">
+            <img src="./img/5.png" alt="Salad" class="w-full h-full object-cover aspect-[3/2] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Salad</p>
+            </div>
+        </div>
+        
+        <!-- Soup -->
+        <div class="col-span-1 rounded-3xl overflow-hidden relative">
+            <img src="./img/6.png" alt="Soup" class="w-full h-full object-cover aspect-[3/2] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Soup</p>
+            </div>
+        </div>
+        
+        <!-- Sweet -->
+        <div class="col-span-1 rounded-3xl overflow-hidden relative">
+            <img src="./img/7.png" alt="Sweet" class="w-full h-full object-cover aspect-[3/2] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Sweet</p>
+            </div>
+        </div>
+        
+        <!-- Vegan -->
+        <div class="col-span-1 md:col-span-2 rounded-3xl overflow-hidden relative">
+            <img src="./img/8.png" alt="Vegan" class="w-full h-full object-cover aspect-[2/1] rounded-3xl">
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+                <p class="text-xl md:text-2xl font-light">Vegan</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 3 -->
+
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Text Content -->
+            <div class="space-y-6">
+                <h1 class="text-5xl font-bold">About Us</h1>
+                
+                <p class="text-lg leading-relaxed">
+                    Welcome to Frycuisine, your go-to destination for delicious recipes, 
+                    kitchen tips, and culinary inspiration! Whether you're a 
+                    seasoned chef or a home cook, we share easy-to-follow recipes, 
+                    flavorful creations, and stories that celebrate the joy of cooking. From 
+                    quick weekday meals to indulgent desserts, our goal is to make 
+                    cooking fun and approachable for everyone. Join us on this tasty 
+                    journey as we explore new flavors and bring people together through 
+                    food. Let's cook, share, and savor every bite!
+                </p>
+                
+                <div>
+                    <button class="bg-[#2c4a2c] text-white px-8 py-3 font-medium uppercase tracking-wider">
+                        Know more about us
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Images -->
+            <div class="space-y-6">
+                <!-- Top image with phone -->
+                <div class="border border-gray-800 rounded-tr-3xl rounded-bl-3xl p-4 relative">
+                    <img src="./img/9.png" alt="Person taking photo of food with smartphone" class="w-full h-64 object-cover rounded-tr-2xl rounded-bl-2xl">
+                </div>
+                
+                <!-- Bottom image with food -->
+                <!-- <div class="border border-gray-800 rounded-tr-3xl rounded-bl-3xl p-4">
+                    <img src="./img/10.png" alt="Delicious food skewers on a black plate" class="w-full h-64 object-cover rounded-tr-2xl rounded-bl-2xl">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <img src="./img/10.png" width="100%" alt="">
+    </div>
+
+    <!-- section 4 -->
+
+    <h1 class="text-4xl font-bold text-center mb-8">Recent Recipes</h1>
+    
+    <!-- Main Featured Recipe -->
+    <div class="mb-10 bg-white rounded-lg overflow-hidden shadow-md">
+        <div class="flex flex-col md:flex-row">
+            <div class="relative md:w-1/3">
+                <img src="./img/11.png" alt="Garlic Butter Khichu" class="w-full h-64 md:h-full object-cover">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 md:w-2/3">
+                <span class="text-green-600 font-medium">Breakfast</span>
+                <h2 class="text-3xl font-bold mt-1 mb-3">Garlic Butter Khichu</h2>
+                <p class="text-gray-700 mb-4">
+                    Indian breakfast options for toddlers are varied and tasteful. It's a delightful experience for toddlers to have a tasty and healthy breakfast.
+                </p>
+                <div class="flex items-center">
+                    <a href="#" class="text-yellow-600 font-medium hover:underline">Read More</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Smaller Recipe Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Almond Pastry Cookies -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="relative">
+                <img src="./img/12.png" alt="Almond Pastry Cookies" class="w-full  object-cover">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4">
+                <span class="text-green-600 font-medium text-sm">Desert/Sweet</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Almond Pastry Cookies</h3>
+                <p class="text-gray-700 text-sm mb-3">
+                    These rich almond cookies baked in an elegant crescent shape and melt in your mouth!
+                </p>
+                <div class="flex items-center">
+                    <a href="#" class="text-yellow-600 text-sm font-medium hover:underline">Read More</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cold Brew Coffee -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="relative">
+                <img src="./img/13.png" alt="Cold Brew Coffee" class="w-full  object-cover">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4">
+                <span class="text-green-600 font-medium text-sm">Appetizer/Beverage/Sweet</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Cold Brew Coffee at Home</h3>
+                <p class="text-gray-700 text-sm mb-3">
+                    Cold, creamy, nutritious and delicious. Perfect smoothie to drink every morning for breakfast this summer.
+                </p>
+                <div class="flex items-center">
+                    <a href="#" class="text-yellow-600 text-sm font-medium hover:underline">Read More</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kouign-Amann French Pastries -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="relative">
+                <img src="./img/14.png" alt="Kouign-Amann French Pastries" class="w-full  object-cover">
+                <button class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4">
+                <span class="text-green-600 font-medium text-sm">Bread Sweet</span>
+                <h3 class="text-xl font-bold mt-1 mb-2">Kouign-Amann French Pastries</h3>
+                <p class="text-gray-700 text-sm mb-3">
+                    Caramelized dough layered with butter and sugar make for a good morning.
+                </p>
+                <div class="flex items-center">
+                    <a href="#" class="text-yellow-600 text-sm font-medium hover:underline">Read More</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 5 -->
+
+    <div class="max-w-6xl mx-auto my-8">
+        <!-- Main Food Card -->
+        <div class="relative bg-white rounded-lg overflow-hidden shadow-md mb-8">
+            <button class="absolute top-3 right-3 text-red-500 z-10">
+                <i class="fas fa-heart"></i>
+            </button>
+            <div class="md:flex">
+                <div class="md:w-1/2">
+                    <img src="./img/15.png" alt="Continental Food Spread" class="w-full h-64 md:h-full object-cover">
+                </div>
+                <div class="p-6 md:w-1/2">
+                    <div class="text-green-600 font-medium mb-2">
+                        Breakfast/Brunch/Desert/Dinner
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Instant Continental Food In Australia For Different Meals</h2>
+                    <p class="text-gray-700 mb-4">
+                        Instant Continental Food In Australia is best for a busy schedule. All those kids going to school or college are in a rush!
+                    </p>
+                    <div class="flex items-center">
+                        <a href="#" class="text-yellow-600 font-medium">Read More</a>
+                        <i class="fas fa-arrow-right ml-2 text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Column Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Breakfast Card -->
+            <div class="relative bg-white rounded-lg overflow-hidden shadow-md">
+                <button class="absolute top-3 right-3 text-red-500 z-10">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <img src="./img/16.png" alt="Non Veg Breakfast" class="w-full object-cover">
+                <div class="p-6">
+                    <div class="text-green-600 font-medium mb-2">
+                        Breakfast
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">List of Some Delicious Non Veg Breakfast Ideas</h2>
+                    <p class="text-gray-700 mb-4">
+                        High protein-rich food is considered in non veg breakfast ideas.
+                    </p>
+                    <div class="flex items-center">
+                        <a href="#" class="text-yellow-600 font-medium">Read More</a>
+                        <i class="fas fa-arrow-right ml-2 text-black"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Egg Benedict Card -->
+            <div class="relative bg-white rounded-lg overflow-hidden shadow-md">
+                <button class="absolute top-3 right-3 text-red-500 z-10">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <img src="./img/17.png" alt="Norwegian Egg Benedict" class="w-full  object-cover">
+                <div class="p-6">
+                    <div class="text-green-600 font-medium mb-2">
+                        Bread Salad
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">Norwegian Egg Benedict</h2>
+                    <p class="text-gray-700 mb-4">
+                        Norwegian Egg Benedict is a perfectly poached egg with the flavor of smoked salmon and muffins.
+                    </p>
+                    <div class="flex items-center">
+                        <a href="#" class="text-yellow-600 font-medium">Read More</a>
+                        <i class="fas fa-arrow-right ml-2 text-black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section 6 -->
+
+    <div class=" bg-white rounded-lg overflow-hidden shadow-lg">
+        <div class="">
+            <div class=" ">
+                <!-- Main content area -->
+                <img src="./img/18.png" alt="Vegetable soup in a dark bowl with a spoon" class="w-full h-auto rounded-lg mb-4">
+                <div class="mb-8 flex">
+                   <div class="mx-4">
+                    
+                    
+                    <h3 class="text-green-600 font-medium text-lg mb-2">Brunch Soup</h3>
+                    
+                    <h2 class="text-gray-800 text-xl font-bold mb-3">Quick Vegetable Soups For Brunch Meal You Should Try</h2>
+                    
+                    <p class="text-gray-600 text-sm mb-4">
+                        Quick vegetable soups for brunch meal are healthy vegetable soups that make you fit and fine
+                    </p>
+                    
+                    <!-- Read More button -->
+                    <div class="inline-block">
+                        <a href="#" class="flex items-center text-yellow-600 font-medium hover:text-yellow-700 transition-colors">
+                            <span>Read More</span>
+                            <span class="ml-2 border border-yellow-600 p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mt-8 border-t pt-4">
+                        <a href="#" class="flex items-center text-gray-700 font-medium hover:text-gray-900 transition-colors">
+                            <span class="text-xl">Load More</span>
+                            <span class="ml-2 border border-gray-400 p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                   </div>
+                   <div class="md:w-1/2 p-6">
+                    <div class="border border-gray-300 h-full rounded-lg"></div>
+                </div>
+                </div>
+                
+                <!-- Load More section -->
+                
+            </div>
+            
+            <!-- Right sidebar/ad space -->
+            
+        </div>
+    </div>
+
+
+    <!-- section 7 -->
+     <div class="container mx-auto py-12 max-w-6xl">
+        <img src="./img/23.png" width="100%" alt="">
+     </div>
+
+
+     <!-- form -->
+
+     <div class=" container mx-auto py-12 w-2/3">
+        <h6 class="py-8">Any questions about recipes? Fill the form:</h6>
+        <form action="">
+            <div class="flex flex-col gap-2">
+                <label for="" class="text-xl">Your Name</label>
+                <input type="text" class="py-2 px-4 border bg-gray-300" name="" id="">
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <label for="" class="text-xl">Your Email</label>
+                <input type="text" class="py-2 px-4 border bg-gray-300" name="" id="">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="" class="text-xl"> Subject</label>
+                <input type="text" class="py-2 px-4 border bg-gray-300" name="" id="">
+            </div>
+            <div class="flex flex-col gap-2">
+                <label for="" class="text-xl">Your Message</label>
+                <textarea type="text" class="py-2 px-4 border bg-gray-300" name="" id=""></textarea>
+            </div>
+            <div class=" flex-col gap-2 text-center">
+                
+                <input type="submit" class="py-4 px-20   my-8 inline-block  rounded-3xl text-white bg-[#203819]" name="" id="">
+            </div>
+        </form>
+     </div>
+    <!-- section 8 -->
+
+    <div class="relative w-full  overflow-hidden rounded-xl shadow-xl my-8">
+        <!-- Grid layout for food images -->
+        <div class="grid grid-cols-2 gap-1">
+            <!-- Top left - Paratha and curry -->
+            <div class="relative  overflow-hidden">
+                <img src="./img/19.png" alt="Paratha and curry" class="object-cover w-full h-full object-left-top">
+            </div>
+            
+            <!-- Top right - Grilled sandwich -->
+            <div class="relative  overflow-hidden">
+                <img src="./img/20.png" alt="Grilled sandwich" class="object-cover w-full h-full object-right-top">
+            </div>
+            
+            <!-- Bottom left - Dumplings -->
+            <div class="relative  overflow-hidden">
+                <img src="./img/21.png" alt="Dumplings" class="object-cover w-full h-full object-left-bottom">
+            </div>
+            
+            <!-- Bottom right - Fried appetizer -->
+            <div class="relative  overflow-hidden">
+                <img src="./img/22.png" alt="Fried appetizer" class="object-cover w-full h-full object-right-bottom">
+            </div>
+        </div>
+        
+        <!-- Center overlay with Instagram info -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-black text-white rounded-full w-32 h-32 flex flex-col items-center justify-center text-center p-2">
+                <p class="text-lg font-bold mb-1">Follow me</p>
+                <p class="text-sm mb-2">@Instagram</p>
+                <div class="text-pink-500 text-3xl">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer  -->
+
+    <footer class="bg-black text-white py-10 px-4 text-center">
+        <!-- Logo -->
+        <div class="mb-6">
+            <div class="bg-white rounded-full w-40 h-40 mx-auto flex items-center justify-center">
+                <div class="relative">
+                    <!-- This is a simplified representation of the logo -->
+                    <img src="https://frycuisine.com/wp-content/uploads/2024/05/cropped-cropped-cropped-Screenshot-2024-05-10-154756-1-e1716560154275.png" width="80%" class="mx-auto   "  alt="">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Get in Touch -->
+        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+        
+        <!-- Email -->
+        <a href="mailto:frycuisine@gmail.com" class="text-green-500 text-xl mb-6 inline-block hover:underline">
+            frycuisine@gmail.com
+        </a>
+        
+        <!-- Social Media Icons -->
+        <div class="flex justify-center gap-4 my-6">
+            <a href="#" class="bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="#" class="hover:underline">Imprint</a>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Contact</a>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-sm">
+            <p>Cook &amp; Write with by FryCuisine</p>
+            <p>&copy; Copyright 2025. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
